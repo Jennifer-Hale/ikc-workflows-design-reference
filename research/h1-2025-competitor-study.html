@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H1 2025 Competitor Study - IKC Workflows Design Reference</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="shell-header">
+    <a href="../index.html" class="shell-header__name">IKC Workflows</a>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="../index.html">Home</a>
+    <a href="../onboarding.html">Onboarding</a>
+    <a href="../releases.html">Releases</a>
+    <a href="../resources.html">Resources</a>
+    <a href="../competitive.html" class="active">Research</a>
+    <a href="../team.html">Team</a>
+  </nav>
+
+  <div class="layout">
+    <aside class="side-nav">
+      <a href="../index.html" class="side-nav__link">Home</a>
+      <a href="../onboarding.html" class="side-nav__link">Onboarding</a>
+      <a href="../releases.html" class="side-nav__link">Releases</a>
+      <a href="../resources.html" class="side-nav__link">Resources</a>
+      <a href="../competitive.html" class="side-nav__link active">Research</a>
+      <a href="../team.html" class="side-nav__link">Team</a>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-header">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <span class="breadcrumb__item"><a href="../competitive.html">Research</a></span>
+          <span class="breadcrumb__item breadcrumb__item--current" aria-current="page">H1 2025 Competitor study</span>
+        </nav>
+        <h1>H1 2025 Competitor study</h1>
+        <p>UX evaluation of CPD workflows vs. Informatica, Collibra, Ataccama, Alation, and Atlan. Conducted April 2025 by Armando Garza and Jennifer Hale.</p>
+      </div>
+
+      <nav class="page-toc" aria-label="On this page">
+        <a href="#recommendations">Top recommendations</a>
+        <a href="#gaps">Gaps identified</a>
+        <a href="#differentiators">IBM differentiators</a>
+        <a href="#about">About the study</a>
+        <a href="#deliverables">Deliverables</a>
+      </nav>
+
+      <!-- Top recommendations -->
+      <div class="section" id="recommendations">
+        <h2>Top recommendations</h2>
+        <p style="margin-bottom: var(--cds-spacing-05);">Four high-impact opportunities surfaced from the competitor comparison, ranked by user value and feasibility.</p>
+
+        <div class="content-row" style="align-items: flex-start; padding: var(--cds-spacing-05) 0; border-bottom: 1px solid var(--cds-border-subtle-01);">
+          <span class="content-row__label" style="font-weight: 600; min-width: 2rem; color: var(--cds-text-helper);">01</span>
+          <div>
+            <p style="font-weight: 600; margin-bottom: var(--cds-spacing-02);">Show request status</p>
+            <p class="helper-01">Provide requesters an easy view into the status of a running request. 4 of 5 competitors include this (Atlan, Alation, Ataccama, Informatica). Directly requested by Lockheed Martin. Explorations started in Mural and Figma — now shipped in 5.4 SW.</p>
+          </div>
+        </div>
+
+        <div class="content-row" style="align-items: flex-start; padding: var(--cds-spacing-05) 0; border-bottom: 1px solid var(--cds-border-subtle-01);">
+          <span class="content-row__label" style="font-weight: 600; min-width: 2rem; color: var(--cds-text-helper);">02</span>
+          <div>
+            <p style="font-weight: 600; margin-bottom: var(--cds-spacing-02);">Enhance commenting</p>
+            <p class="helper-01">Allow @mentions, links, file attachments, and notifications outside of CPD. 4 of 5 competitors include this (Alation, Collibra, Informatica, Ataccama). Explorations started in Figma.</p>
+          </div>
+        </div>
+
+        <div class="content-row" style="align-items: flex-start; padding: var(--cds-spacing-05) 0; border-bottom: 1px solid var(--cds-border-subtle-01);">
+          <span class="content-row__label" style="font-weight: 600; min-width: 2rem; color: var(--cds-text-helper);">03</span>
+          <div>
+            <p style="font-weight: 600; margin-bottom: var(--cds-spacing-02);">Visual UI for workflow configuration</p>
+            <p class="helper-01">Allow configurators to build workflows through a visual interface rather than form-based config. 3 of 5 competitors include this (Collibra, Informatica, Atlan). No IBM explorations started yet.</p>
+          </div>
+        </div>
+
+        <div class="content-row" style="align-items: flex-start; padding: var(--cds-spacing-05) 0;">
+          <span class="content-row__label" style="font-weight: 600; min-width: 2rem; color: var(--cds-text-helper);">04</span>
+          <div>
+            <p style="font-weight: 600; margin-bottom: var(--cds-spacing-02);">Incorporate generative AI</p>
+            <p class="helper-01">Bring workflow capabilities into the Data Intelligence Assistant chat experience. 3 of 5 competitors include this (Informatica, Ataccama, Atlan). Growing as IBM expands AI capabilities. Explorations started in Figma.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gaps identified -->
+      <div class="section" id="gaps">
+        <h2>Gaps identified</h2>
+        <p style="margin-bottom: var(--cds-spacing-05);">Features present in competitor products that CPD Workflows is currently missing, plotted on an impact / feasibility matrix.</p>
+        <table class="structured-list">
+          <thead><tr><th>Gap</th><th>Context</th></tr></thead>
+          <tbody>
+            <tr><td>Request status monitoring for requesters</td><td>4 of 5 competitors; requested by Lockheed Martin — <strong>now shipped 5.4 SW</strong></td></tr>
+            <tr><td>Visual UI for workflow configuration</td><td>3 of 5 competitors (Collibra, Informatica, Atlan)</td></tr>
+            <tr><td>Report creation and export</td><td>Ability for builders to create and run reports, export to external products</td></tr>
+            <tr><td>Keyword search of tasks</td><td>Fulfillers cannot search task inbox by keyword</td></tr>
+            <tr><td>Third-party app integration</td><td>For workflow builders; competitors connect to external tools</td></tr>
+            <tr><td>Commenting enhancements</td><td>@mention, add link, file attachment — 4 of 5 competitors</td></tr>
+            <tr><td>Request / task prioritization</td><td>Ability to flag or prioritize a request or task</td></tr>
+            <tr><td>Unique order numbers</td><td>Give each request a unique reference number</td></tr>
+            <tr><td>Generative AI integration</td><td>Growing as IBM scales AI capabilities</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- IBM differentiators -->
+      <div class="section" id="differentiators">
+        <h2>IBM differentiators</h2>
+        <p style="margin-bottom: var(--cds-spacing-05);">Capabilities where CPD Workflows leads or differentiates from competitors — areas to protect and double down on.</p>
+        <table class="structured-list">
+          <thead><tr><th>Differentiator</th><th>Perspective</th></tr></thead>
+          <tbody>
+            <tr><td>Requesters can add comments to their own request</td><td>Requester</td></tr>
+            <tr><td>Central request inbox for requesters to view all their requests</td><td>Requester</td></tr>
+            <tr><td>Fulfillers can claim tasks</td><td>Task fulfiller</td></tr>
+            <tr><td>Fulfillers can assign tasks to other users</td><td>Task fulfiller</td></tr>
+            <tr><td>Workflow builders can manage workflow types</td><td>Workflow builder</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- About -->
+      <div class="section" id="about">
+        <h2>About the study</h2>
+        <p>Assessed CPD workflow and collaboration features against five market alternatives across three user perspectives: <strong>requesters</strong> (launching and tracking requests), <strong>task fulfillers</strong> (interacting with assigned tasks), and <strong>workflow builders</strong> (configuring and managing workflows). Research methods included competitor documentation review, demo videos, and free product demos.</p>
+        <p style="margin-top: var(--cds-spacing-04);">Useful context for design decisions, especially given Lockheed Martin's recent migration from Collibra to CPD.</p>
+      </div>
+
+      <!-- Deliverables -->
+      <div class="section" id="deliverables">
+        <h2>Deliverables</h2>
+        <div class="content-row"><span class="content-row__label">Mural board</span><a href="https://ibm.box.com/s/4hxoplg7vmhosg9ivkssulm1qvn59e3y" target="_blank">Open in Mural</a></div>
+        <div class="content-row"><span class="content-row__label">Playback deck (PDF)</span><a href="https://ibm.box.com/s/1wpktk9bk6g7i1mjzfasvx99focksy0p" target="_blank">Open PDF</a></div>
+        <div class="content-row"><span class="content-row__label">Video playback (15 min)</span><a href="https://ibm.box.com/s/rk3bhw6vj60qrss8ifyfcsfqq9v5jvqz" target="_blank">Watch recording</a></div>
+      </div>
+
+      <footer class="site-footer">
+        IKC Workflows Design Reference &middot; IBM Cloud Pak for Data &middot; Last updated 2025
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>

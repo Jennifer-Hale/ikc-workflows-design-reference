@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Releases - IKC Workflows Design Reference</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="shell-header">
+    <a href="index.html" class="shell-header__name">IKC Workflows</a>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="onboarding.html">Onboarding</a>
+    <a href="releases.html" class="active">Releases</a>
+    <a href="resources.html">Resources</a>
+    <a href="competitive.html">Research</a>
+    <a href="team.html">Team</a>
+  </nav>
+
+  <div class="layout">
+    <aside class="side-nav">
+      <a href="index.html" class="side-nav__link">Home</a>
+      <a href="onboarding.html" class="side-nav__link">Onboarding</a>
+      <a href="releases.html" class="side-nav__link active">Releases</a>
+      <a href="resources.html" class="side-nav__link">Resources</a>
+      <a href="competitive.html" class="side-nav__link">Research</a>
+      <a href="team.html" class="side-nav__link">Team</a>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-header">
+        <span class="label-01" style="color: var(--cds-text-helper); text-transform: uppercase;">Releases</span>
+        <h1>Release history</h1>
+        <p>Design deliverables by release, most recent first. Each entry links to relevant Figma specs.</p>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">5.4</span>
+          <span class="release__date">July 2026</span>
+          <span class="tag tag--blue">Current</span>
+        </div>
+        <ul>
+          <li><strong>Business Workflow Modeler (SaaS):</strong> Visual workflow modeler for SaaS deployments. <a href="https://www.figma.com/design/tX1ALZBfEyFci9DagTDnyE/Workflow---2026-projects?node-id=0-1&t=Rn8OVlNkCRoqg6cQ-1" target="_blank">Figma</a>, <a href="https://bigblue.aha.io/features/UNIFIEDCAT-6263" target="_blank">Epic 6263</a></li>
+          <li><strong>Workflow tools within Data Intelligence Assistant MCP Server:</strong> Expose workflow tools through the DI Assistant MCP server. <a href="https://bigblue.aha.io/features/UNIFIEDCAT-6300" target="_blank">Epic 6300</a></li>
+          <li><strong>Versioning of Governance Artifacts (Workflows):</strong> Version control support for governance artifacts within workflows. <a href="https://www.figma.com/design/XuKvqnOi2DjJAXDnSyw6Cf/Versioning-of-governance-artifacts_Hi-Fi?node-id=3372-23826&t=GagXV23Pn80ULLs2-1" target="_blank">Figma</a></li>
+        </ul>
+        <div class="notification" style="margin-top: var(--cds-spacing-04);">
+          <svg class="notification__icon" viewBox="0 0 20 20" fill="var(--cds-support-info)"><circle cx="10" cy="5" r="1"/><rect x="9" y="8" width="2" height="7" rx="1"/><circle cx="10" cy="10" r="9" fill="none" stroke="var(--cds-support-info)" stroke-width="1.5"/></svg>
+          <p>External user testing being planned for Business Workflow Modeler.</p>
+        </div>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">5.4 SW</span>
+          <span class="release__date">June 2026</span>
+          <span class="tag tag--gray">Shipped</span>
+        </div>
+        <ul>
+          <li><strong>Task inbox status monitoring for requestors:</strong> Clear way for users to view the current status of their in-progress requests from the Task Inbox. <a href="https://www.figma.com/design/EzVvjkl2xznBUD3S90FAtY/Workflows---2025-H2-Enhancements?node-id=1-253167" target="_blank">Figma</a>, <a href="https://bigblue.aha.io/features/UNIFIEDCAT-6082" target="_blank">Epic 6082</a></li>
+          <li><strong>Batch action updates:</strong> Updates to batch action interactions in the task list. <a href="https://www.figma.com/design/tX1ALZBfEyFci9DagTDnyE/Workflow---2026-projects?node-id=2764-76830&t=Rn8OVlNkCRoqg6cQ-1" target="_blank">Figma</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">5.3.1</span>
+          <span class="release__date">Sep / Oct 2025</span>
+          <span class="tag tag--gray">Previous</span>
+        </div>
+        <ul>
+          <li><strong>Import configuration:</strong> Indicate inconsistencies in user names, user groups, and categories when importing custom workflow config to production. <a href="https://bigblue.aha.io/features/UNIFIEDCAT-6083" target="_blank">Epic 6083</a></li>
+          <li><strong>Request status monitoring:</strong> Clear way for users to view current status of in-progress requests from Task Inbox. <a href="https://bigblue.aha.io/features/UNIFIEDCAT-6082" target="_blank">Epic 6082</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">5.3.1</span>
+          <span class="release__date">also 4.7.3</span>
+        </div>
+        <ul>
+          <li><strong>Group Tearsheet:</strong> Implement Group Tearsheet for selecting groups in tasks. <a href="https://bigblue.aha.io/features/UNIFIEDCAT-5591" target="_blank">Epic 5591</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">5.2+</span>
+          <span class="release__date">Mar 10, 2025</span>
+        </div>
+        <ul>
+          <li><strong>Revised Data Access Request:</strong> User-launched request to access assets (metadata-only users can request actual data access). <a href="https://www.figma.com/design/DDNCsdxddvMbCVKc9vQ6yd/Workflows-DataAccess_RevokeDataAccess-post-5.2-2025-?node-id=1-29615&t=kHImDTAAQkQKw6wJ-1" target="_blank">Figma</a></li>
+          <li><strong>Block Data Access Request:</strong> Admin/Data Owner blocks access to actual data for specified users. <a href="https://www.figma.com/design/DDNCsdxddvMbCVKc9vQ6yd/Workflows-DataAccess_RevokeDataAccess-post-5.2-2025-?node-id=1-29615&t=kHImDTAAQkQKw6wJ-1" target="_blank">Figma</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">5.1.1</span>
+          <span class="release__date">Aug 15, 2024</span>
+        </div>
+        <ul>
+          <li><strong>MVP Data Access Request:</strong> Later revised to include Block data request; launch points inside business Glossary updated. <a href="https://www.figma.com/design/DDNCsdxddvMbCVKc9vQ6yd/Workflows-DataAccess_RevokeDataAccess-post-5.2-2025-?node-id=279-104440&t=kHImDTAAQkQKw6wJ-1" target="_blank">Figma</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version"><span class="tag tag--gray">Informal</span></span>
+        </div>
+        <ul>
+          <li><strong>Pagination updates:</strong> Interaction and additional UI annotations.</li>
+          <li><strong>Task inbox - Batch select:</strong> Complex form fields tasks.</li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">4.8.3</span>
+          <span class="release__date">Dec 11, 2023</span>
+          <span class="tag tag--gray">Minor</span>
+        </div>
+        <ul>
+          <li><strong>Task inbox:</strong> Pagination addition (accessibility). <a href="https://www.figma.com/design/qiR8CpEvHln0X5m02aWfIZ/CPD_Workflow-4.8.3--Accessibility-updates-?node-id=0-1&t=ZVUS5Der5TWtl53u-1" target="_blank">Figma</a></li>
+          <li><strong>WF Config:</strong> Placeholder context, labels updates (accessibility / screenreader). <a href="https://www.figma.com/design/qiR8CpEvHln0X5m02aWfIZ/CPD_Workflow-4.8.3--Accessibility-updates-?node-id=0-1&t=ZVUS5Der5TWtl53u-1" target="_blank">Figma</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">4.8.1</span>
+          <span class="release__date">Nov 17, 2023</span>
+          <span class="tag tag--gray">Minor</span>
+        </div>
+        <ul>
+          <li><strong>Batch action:</strong> Task list select (simple + complex tasks with form properties). <a href="https://www.figma.com/design/olBIyURd6PzlTITldHs7Oi/CPD_Workflows_4.8.1?m=auto&t=2ADkuHZ5XbdRB8l3-6" target="_blank">Figma</a></li>
+          <li><strong>Task inbox:</strong> Filtered "Empty state" design update. <a href="https://www.figma.com/design/olBIyURd6PzlTITldHs7Oi/CPD_Workflows_4.8.1?m=auto&t=2ADkuHZ5XbdRB8l3-6" target="_blank">Figma</a></li>
+          <li><strong>Task status:</strong> Not assigned / Ownership disable + tooltip. <a href="https://www.figma.com/design/olBIyURd6PzlTITldHs7Oi/CPD_Workflows_4.8.1?m=auto&t=2ADkuHZ5XbdRB8l3-6" target="_blank">Figma</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">4.7.3</span>
+          <span class="release__date">Aug 28, 2023</span>
+        </div>
+        <ul>
+          <li><strong>Data Quality SLA issue remediation.</strong> <a href="https://www.figma.com/design/cR49uBA6g4VlRLcmbTkhqb/DQ-SLA---Workflows-only?m=auto&t=2ADkuHZ5XbdRB8l3-6" target="_blank">Figma</a></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">4.7</span>
+          <span class="release__date">June 2023</span>
+        </div>
+        <ul>
+          <li><strong>Data Quality M360 remediation.</strong></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">4.5</span>
+        </div>
+        <ul>
+          <li><strong>Task status page.</strong></li>
+          <li><strong>Filters.</strong></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">4.0</span>
+        </div>
+        <ul>
+          <li><strong>User groups support.</strong></li>
+          <li><strong>Approval options.</strong></li>
+          <li><strong>Consistency Quest UI improvements.</strong></li>
+        </ul>
+      </div>
+
+      <div class="release">
+        <div class="release__header">
+          <span class="release__version">3.5</span>
+          <span class="release__date">Summer 2020</span>
+        </div>
+        <ul>
+          <li><strong>Configuration.</strong></li>
+          <li><strong>Task inbox.</strong></li>
+          <li><strong>Task monitoring.</strong></li>
+        </ul>
+      </div>
+
+      <footer class="site-footer">
+        IKC Workflows Design Reference &middot; IBM Cloud Pak for Data &middot; Last updated 2025
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>

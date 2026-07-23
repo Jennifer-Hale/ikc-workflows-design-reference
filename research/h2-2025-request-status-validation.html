@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H2 2025 Request Status Validation - IKC Workflows Design Reference</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="shell-header">
+    <a href="../index.html" class="shell-header__name">IKC Workflows</a>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="../index.html">Home</a>
+    <a href="../onboarding.html">Onboarding</a>
+    <a href="../releases.html">Releases</a>
+    <a href="../resources.html">Resources</a>
+    <a href="../competitive.html" class="active">Research</a>
+    <a href="../team.html">Team</a>
+  </nav>
+
+  <div class="layout">
+    <aside class="side-nav">
+      <a href="../index.html" class="side-nav__link">Home</a>
+      <a href="../onboarding.html" class="side-nav__link">Onboarding</a>
+      <a href="../releases.html" class="side-nav__link">Releases</a>
+      <a href="../resources.html" class="side-nav__link">Resources</a>
+      <a href="../competitive.html" class="side-nav__link active">Research</a>
+      <a href="../team.html" class="side-nav__link">Team</a>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-header">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <span class="breadcrumb__item"><a href="../competitive.html">Research</a></span>
+          <span class="breadcrumb__item breadcrumb__item--current" aria-current="page">H2 2025 Request status validation</span>
+        </nav>
+        <h1>H2 2025 Request status monitoring — design validation</h1>
+        <p>Usability study validating the design for workflow request status monitoring (Epic 6082). Conducted December 2025 by Jennifer Hale.</p>
+      </div>
+
+      <nav class="page-toc" aria-label="On this page">
+        <a href="#overview">Overview</a>
+        <a href="#positive">Positive findings</a>
+        <a href="#negative">Areas for improvement</a>
+        <a href="#next-steps">Next steps</a>
+        <a href="#deliverables">Deliverables</a>
+      </nav>
+
+      <div class="section" id="overview">
+        <h2>Overview</h2>
+        <p>In early December 2025, four interviews were held with internal IBM participants to hear feedback on their workflow processes and to gather reactions to new designs for request status monitoring.</p>
+        <table class="structured-list">
+          <thead><tr><th>Participant</th><th>Role</th><th>Organisation</th></tr></thead>
+          <tbody>
+            <tr><td>P1</td><td>Technology Engineer</td><td>IBM</td></tr>
+            <tr><td>P2</td><td>Operational Metadata Process Owner</td><td>IBM CDO</td></tr>
+            <tr><td>P3</td><td>Data Modeler</td><td>IBM CDO</td></tr>
+            <tr><td>P4</td><td>Data Analyst</td><td>IBM CDO</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section" id="positive">
+        <h2>Positive findings</h2>
+
+        <h3>1 — Workflow status is easy to discover</h3>
+        <p>Users easily found the status of their workflow through multiple entry points: the task list details, task title subheading, request progress indicator, and activity history.</p>
+
+        <h3>2 — Expanding each request step tested well</h3>
+        <p>Seeing details within an expanded step matched how users expected to interact. It wasn't always immediately discoverable unprompted, which is acceptable since the design will expand by default.</p>
+        <ul class="body-list">
+          <li>"I'd like to click on the Review down arrow to see what information you can give me." — P1</li>
+          <li>"Follows suit with other parts in the product." — P3</li>
+          <li>"To me this is concise." — P4</li>
+        </ul>
+
+        <h3>3 — Tooltips and status icons tested positively</h3>
+        <p>Users responded as expected to tooltip hover interactions and status icons, and understood what to look for within each area for more specific information.</p>
+        <ul class="body-list">
+          <li>"The information that pops up, I think that's important." — P2</li>
+          <li>"It is definitely helpful." — P4</li>
+        </ul>
+
+        <h3>4 — Claimed status is clearly understood</h3>
+        <p>Users recognised that a Claimed status means the assignee has acknowledged the task and plans to work on it — they will be accountable for its completion.</p>
+        <ul class="body-list">
+          <li>"It means he is now going to be personally responsible for approving this business term." — P1</li>
+          <li>"He's claimed it — that's the same thing as accepting assignment." — P3</li>
+        </ul>
+
+        <h3>5 — Activity history is valuable</h3>
+        <p>Participants quickly discovered activity history as a place to scroll through all past actions. They expected to see past events and comments here.</p>
+        <ul class="body-list">
+          <li>"The latest activity itself will be on the top and then of course listing the other ones below." — P2</li>
+          <li>"I can always click on older activities and probably see the whole workflow." — P4</li>
+        </ul>
+
+        <h3>6 — All users wanted to click "See details"</h3>
+        <p>Every participant at some point said they'd click <em>See details</em> to learn more about the request process and status. This raises a question: is this potentially misleading, or a useful affordance to lean into?</p>
+        <ul class="body-list">
+          <li>"I also see a See details on the screen so I would also want to see the details." — P1</li>
+          <li>"If I want to see details, I just click on the little See details area." — P2</li>
+        </ul>
+      </div>
+
+      <div class="section" id="negative">
+        <h2>Areas for improvement</h2>
+
+        <h3>1 — Tasks with multiple assignees confuse users</h3>
+        <p>Participants were generally confused by steps with multiple assignees — they didn't understand the symbols, names, user groups, and how these fit together. Specific feedback included:</p>
+        <ul class="body-list">
+          <li>Difficulty understanding which assignees still need to take action vs. who has completed theirs</li>
+          <li>Desire to show only assignees who still need to act</li>
+          <li>Concern around very long lists (10+ names) in large user groups</li>
+          <li>Suggestion to make names hyperlinks to launch email or a message</li>
+        </ul>
+        <ul class="body-list">
+          <li>"Why is there still an In progress symbol next to the security team and GCDO?" — P1 &amp; P2</li>
+          <li>"Who else is supposed to approve it? This doesn't tell me." — P4</li>
+        </ul>
+
+        <h3>2 — Task step names are confused with completed actions</h3>
+        <p>The step name "Approve" was misleading — users assumed it was the only action available, and found it redundant when the tooltip showed the same word.</p>
+        <ul class="body-list">
+          <li>"Seeing the action is the same as the word itself." — P1</li>
+          <li>"By hovering over the icon it's going to give me the same word that I see right next to it." — P4</li>
+        </ul>
+        <p><strong>Proposed fix:</strong> Rename task steps to differentiate from action names — e.g. "Review step", "Approve step" — to better indicate these are stages, not completed actions.</p>
+
+        <h3>3 — No easy way to escalate a stuck request</h3>
+        <p>Multiple participants wished for a simple mechanism to unstick a request — a button or comment field to prompt the current assignee.</p>
+        <ul class="body-list">
+          <li>"I should have an action for me in the field — a button that says Request clarification, Escalate, whatever the word is." — P4</li>
+          <li>"I do wish those were links so I could click that person and go into their task and send them a message." — P3</li>
+        </ul>
+        <p><strong>Note from 3-in-a-Box (12/11):</strong> Consider a Reference ID to bring a request into context outside the Task Inbox.</p>
+
+        <h3>4 — Negative action status icons should use a warning color</h3>
+        <p>Users expected a rejected or failed step to show a red or warning-colored icon — not blue, which felt too neutral or positive.</p>
+        <ul class="body-list">
+          <li>"If it's rejected, it would be like a red cross and say not approved." — P1</li>
+          <li>"I want a different color. I don't want blue because blue is happy." — P3</li>
+        </ul>
+      </div>
+
+      <div class="section" id="next-steps">
+        <h2>Next steps</h2>
+        <table class="structured-list">
+          <thead><tr><th>Action</th><th>Effort</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Revise task step names</strong> — Rename "Approve" and similar steps so they don't read as completed actions. Use "Review step", "Approve step", or similar.</td>
+              <td><span class="tag tag--green">Easy</span></td>
+            </tr>
+            <tr>
+              <td><strong>Revise negative action status icon to warning color</strong> — Use red or warning token when a step was completed with a negative action (e.g. rejected). Needs deeper examination.</td>
+              <td><span class="tag tag--green">Easy</span></td>
+            </tr>
+            <tr>
+              <td><strong>Consider a simple escalation mechanism</strong> — Allow request authors to click a button to escalate: send assignee an email, flag as high priority, or leave a comment with an audit trail.</td>
+              <td><span class="tag tag--blue">Medium</span></td>
+            </tr>
+            <tr>
+              <td><strong>Keep focus on what still needs to be done</strong> — Surface blockers and pending actions prominently in the complex request workflow view.</td>
+              <td><span class="tag tag--blue">Medium</span></td>
+            </tr>
+            <tr>
+              <td><strong>Multiple enhancements for complex workflows</strong> — Show "3 of 5 completed" at a high level; consider user group tooltip for partial completion; address display of large user groups without lengthening the page.</td>
+              <td><span class="tag tag--gray">Hard</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section" id="deliverables">
+        <h2>Deliverables</h2>
+        <div class="content-row">
+          <span class="content-row__label">Research document (PDF)</span>
+          <a href="https://ibm.box.com/s/chc8muw1r23b237lkiq6jv1cfidf6a59" target="_blank">Open on Box</a>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        IKC Workflows Design Reference &middot; IBM Cloud Pak for Data &middot; Last updated 2025
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>

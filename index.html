@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKC Workflows Design Reference</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="shell-header">
+    <a href="index.html" class="shell-header__name">IKC Workflows</a>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="onboarding.html">Onboarding</a>
+    <a href="releases.html">Releases</a>
+    <a href="resources.html">Resources</a>
+    <a href="competitive.html">Research</a>
+    <a href="team.html">Team</a>
+  </nav>
+
+  <div class="layout">
+    <aside class="side-nav">
+      <a href="index.html" class="side-nav__link active">Home</a>
+      <a href="onboarding.html" class="side-nav__link">Onboarding</a>
+      <a href="releases.html" class="side-nav__link">Releases</a>
+      <a href="resources.html" class="side-nav__link">Resources</a>
+      <a href="competitive.html" class="side-nav__link">Research</a>
+      <a href="team.html" class="side-nav__link">Team</a>
+    </aside>
+
+    <main class="main-content">
+
+      <!-- Hero -->
+      <div class="hero">
+        <span class="hero__label">IBM Knowledge Catalog</span>
+        <h1>IKC Workflows Design Reference</h1>
+        <p>Living reference for the Workflows squad. Design specs, release history, competitive research, and team information.</p>
+      </div>
+
+      <!-- What is Workflow -->
+      <div class="section">
+        <h2>About Workflows</h2>
+        <p>Workflow is a Common Core Service (CCS) within the CPD platform. It gives customers a centralized tool to build, configure, launch, and manage workflows for their business processes.</p>
+        <p>A workflow is a combination of prescribed people and processes in order to change something, create something new, or alert users. The framework connects across data governance, data quality remediation, data access requests, service requests, and general requests.</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat__number">53</div>
+          <div class="stat__label">Backlog items in Airtable</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">5</div>
+          <div class="stat__label">Competitors evaluated</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">14</div>
+          <div class="stat__label">Releases since v3.5</div>
+        </div>
+      </div>
+
+      <!-- Navigation tiles -->
+      <div class="section">
+        <h2>Explore</h2>
+        <div class="tile-grid">
+          <a href="onboarding.html" class="tile">
+            <div>
+              <div class="tile__label">Onboarding</div>
+              <div class="tile__title">Getting started</div>
+              <div class="tile__description">What is a workflow, types, user personas, Flowable engine, and design playback recordings.</div>
+            </div>
+            <div class="tile__arrow">&rarr;</div>
+          </a>
+          <a href="releases.html" class="tile">
+            <div>
+              <div class="tile__label">Releases</div>
+              <div class="tile__title">Release history</div>
+              <div class="tile__description">Full timeline from v3.5 (Summer 2020) through 5.4, with Figma specs for each delivery.</div>
+            </div>
+            <div class="tile__arrow">&rarr;</div>
+          </a>
+          <a href="resources.html" class="tile">
+            <div>
+              <div class="tile__label">Resources</div>
+              <div class="tile__title">Files &amp; links</div>
+              <div class="tile__description">Figma files, Mural boards, Airtable backlog, recordings, and product documentation.</div>
+            </div>
+            <div class="tile__arrow">&rarr;</div>
+          </a>
+          <a href="competitive.html" class="tile">
+            <div>
+              <div class="tile__label">Research</div>
+              <div class="tile__title">Competitive study</div>
+              <div class="tile__description">April 2025 UX evaluation: Collibra, Informatica, Ataccama, Atlation, and Atlan.</div>
+            </div>
+            <div class="tile__arrow">&rarr;</div>
+          </a>
+          <a href="team.html" class="tile">
+            <div>
+              <div class="tile__label">Team</div>
+              <div class="tile__title">Team &amp; process</div>
+              <div class="tile__description">Roster, roles, meeting cadence, Slack channels, and how we collaborate.</div>
+            </div>
+            <div class="tile__arrow">&rarr;</div>
+          </a>
+          <a href="#" class="tile">
+            <div>
+              <div class="tile__label">Backlog</div>
+              <div class="tile__title">Airtable backlog</div>
+              <div class="tile__description">53 items tracked. Prioritization exercise done in Mural earlier this year.</div>
+            </div>
+            <div class="tile__arrow">&rarr;</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Current focus -->
+      <div class="section">
+        <h2>Current focus</h2>
+        <div class="notification">
+          <svg class="notification__icon" viewBox="0 0 20 20" fill="var(--cds-support-info)"><circle cx="10" cy="5" r="1"/><rect x="9" y="8" width="2" height="7" rx="1"/><circle cx="10" cy="10" r="9" fill="none" stroke="var(--cds-support-info)" stroke-width="1.5"/></svg>
+          <p>The most recent work (Sep/Oct 2025) focuses on <strong>5.3 Workflow enhancements</strong>. User testing planned for late Nov / early Dec 2025 (3-6 internal IBM GCDO sessions).</p>
+        </div>
+        <ul class="body-list">
+          <li><strong>Import configuration</strong> (Epic 6083): Notify users of inconsistencies in user names, groups, and categories when importing from test to production.</li>
+          <li><strong>Request status monitoring</strong> (Epic 6082): Clear path for users to view current status of in-progress requests from Task Inbox.</li>
+        </ul>
+      </div>
+
+      <!-- Client engagement -->
+      <div class="section">
+        <h2>Active client engagement</h2>
+        <p>Lockheed Martin (contact: Michael Kuzma, via Steven Liddle) recently adopted CPD from Collibra. They've raised 5 enhancement requests: one for Glossary team, one straightforward fix, three more complex. Tracked in Mural and Figma.</p>
+      </div>
+
+      <footer class="site-footer">
+        IKC Workflows Design Reference &middot; IBM Cloud Pak for Data &middot; Last updated 2025
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>

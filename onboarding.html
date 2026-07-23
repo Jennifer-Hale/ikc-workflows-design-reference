@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding - IKC Workflows Design Reference</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="shell-header">
+    <a href="index.html" class="shell-header__name">IKC Workflows</a>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="onboarding.html" class="active">Onboarding</a>
+    <a href="releases.html">Releases</a>
+    <a href="resources.html">Resources</a>
+    <a href="competitive.html">Research</a>
+    <a href="team.html">Team</a>
+  </nav>
+
+  <div class="layout">
+    <aside class="side-nav">
+      <a href="index.html" class="side-nav__link">Home</a>
+      <a href="onboarding.html" class="side-nav__link active">Onboarding</a>
+      <a href="releases.html" class="side-nav__link">Releases</a>
+      <a href="resources.html" class="side-nav__link">Resources</a>
+      <a href="competitive.html" class="side-nav__link">Research</a>
+      <a href="team.html" class="side-nav__link">Team</a>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-header">
+        <span class="label-01" style="color: var(--cds-text-helper); text-transform: uppercase;">Onboarding</span>
+        <h1>Getting started</h1>
+        <p>Everything you need to understand the Workflows initiative, how it fits into CPD, and the design framework behind it.</p>
+      </div>
+
+      <nav class="page-toc" aria-label="On this page">
+        <a href="#initiative">The initiative</a>
+        <a href="#workflows">What is a workflow</a>
+        <a href="#types">Types of workflows</a>
+        <a href="#flowable">Flowable</a>
+        <a href="#users">Our users</a>
+        <a href="#playbacks">Design playbacks</a>
+      </nav>
+
+      <!-- Initiative -->
+      <div class="section" id="initiative">
+        <h2>The initiative</h2>
+        <p>Customers need a centralized tool for workflows within the CPD platform to build, configure, launch, and manage their business processes.</p>
+        <p>Workflow is a <strong>Common Core Service (CCS)</strong>: a shared, reusable service across the platform. It connects to several domains:</p>
+        <ul class="body-list">
+          <li>Service requests</li>
+          <li>Data governance</li>
+          <li>Data access and requests</li>
+          <li>General requests</li>
+          <li>Open scale</li>
+          <li>Data Quality remediation</li>
+        </ul>
+      </div>
+
+      <!-- What is a workflow -->
+      <div class="section" id="workflows">
+        <h2>What is a workflow?</h2>
+        <p>A combination of prescribed people and processes in order to change something, create something new, or alert users.</p>
+
+        <h3>Key features</h3>
+        <ul class="body-list">
+          <li>Workflow configuration and management</li>
+          <li>Task inbox and system notifications</li>
+          <li>Task management and metrics</li>
+        </ul>
+
+        <h3>Why workflow matters</h3>
+        <ul class="body-list">
+          <li>Establish and streamline processes</li>
+          <li>Gain visibility into business processes</li>
+          <li>Identify and respond to process issues</li>
+          <li>Improve business operation efficiency</li>
+        </ul>
+      </div>
+
+      <!-- Types -->
+      <div class="section" id="types">
+        <h2>Types of workflows</h2>
+        <div class="comparison">
+          <div class="comparison__box">
+            <h4>Human-centric</h4>
+            <ul>
+              <li>Most or all tasks assigned to humans</li>
+              <li>Requires human involvement</li>
+              <li>Requires human approvals</li>
+              <li>May require humans to create something new</li>
+            </ul>
+          </div>
+          <div class="comparison__box">
+            <h4>System-centric</h4>
+            <ul>
+              <li>Most or all tasks done by machine</li>
+              <li>May require little to no human involvement</li>
+              <li>Workflow can trigger machine tasks</li>
+              <li>Machine tasks include creating assets (e.g. reports)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Use case examples</h3>
+        <table class="structured-list">
+          <thead>
+            <tr><th>Type</th><th>Use case</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag--blue">Human-centric</span></td>
+              <td>Data Governance</td>
+              <td>Governance Change Request: Submit &rarr; Approve &rarr; Fulfill &rarr; Accept Change</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag--blue">Human-centric</span></td>
+              <td>Data Quality M360 Remediation</td>
+              <td>Variants with no approval step and with one approval step. <a href="#">Mural</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag tag--teal">Human + Automation</span></td>
+              <td>Data Quality SLA</td>
+              <td>Service Level Agreement remediation with automated trigger. <a href="#">Figma</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Flowable -->
+      <div class="section" id="flowable">
+        <h2>What is Flowable?</h2>
+        <p>An open-source workflow engine used to generate workflow models for business processes such as request-for-approval processes.</p>
+
+        <h3>How is it used with CPD?</h3>
+        <p>It serves as the workflow engine. It's used to create new types of workflows and to extend or modify the ones that ship out of the box.</p>
+
+        <h3>Out-of-the-box templates</h3>
+        <ul class="body-list">
+          <li>AutoPublish</li>
+          <li>One step approval and one review step</li>
+          <li>Two step approval and one review step</li>
+        </ul>
+        <p>Templates can be used as-is by a Configurator, or customized further by a Workflow Developer.</p>
+      </div>
+
+      <!-- Users -->
+      <div class="section" id="users">
+        <h2>Who are our users?</h2>
+        <div class="persona-grid">
+          <div class="persona-card">
+            <h4>Requester</h4>
+            <p>Initiates internal requests to obtain, use, or manage data for project needs.</p>
+            <span class="persona-roles">Data Scientist, Data Analyst</span>
+          </div>
+          <div class="persona-card">
+            <h4>Approver</h4>
+            <p>Reviews and approves data requests to be fulfilled.</p>
+            <span class="persona-roles">Data Steward, Data Analyst</span>
+          </div>
+          <div class="persona-card">
+            <h4>Fulfiller</h4>
+            <p>Fulfills internal data requests for assets they are responsible for.</p>
+            <span class="persona-roles">Data Engineer, System Administrator</span>
+          </div>
+          <div class="persona-card">
+            <h4>Builder</h4>
+            <p>Configures workflow tools so business users can launch and fulfill requests.</p>
+            <span class="persona-roles">App Developer, System Administrator</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playbacks -->
+      <div class="section" id="playbacks">
+        <h2>Design playbacks</h2>
+        <p>Recorded walkthroughs of the product experience:</p>
+
+        <h3>Governance data use case</h3>
+        <div class="content-row"><span class="content-row__label">End-user submits request</span><a href="#">Deck</a></div>
+        <div class="content-row"><span class="content-row__label">Walk-through video (5:26)</span><a href="#">Recording</a></div>
+        <div class="content-row"><span class="content-row__label">Admin checks status</span><a href="#">Deck</a></div>
+        <div class="content-row"><span class="content-row__label">Dashboard improvement overview</span><a href="#">Deck</a></div>
+        <div class="content-row"><span class="content-row__label">Admin creates type + configuration</span><a href="#">Deck</a></div>
+        <div class="content-row"><span class="content-row__label">Walk-through video (8:10)</span><a href="#">Recording</a></div>
+
+        <h3>End-user task inbox</h3>
+        <p>Full task lifecycle: claim, comment, complete form fields, approve with due date, review. Second assignee reviews and approves. Requester reviews completed requests. <a href="#">Recording</a></p>
+
+        <h3>Admin configuration</h3>
+        <p>Create configuration from OOTB template, add assignees and notify users, complete generic change request. <a href="#">Recording</a></p>
+
+        <h3>Admin status page</h3>
+        <p>Three recordings covering task detail tearsheets, adding assignees, unclaiming tasks, filtering for "at risk," and publishing. <a href="#">Recording 1</a> &middot; <a href="#">Recording 2</a> &middot; <a href="#">Recording 3</a></p>
+      </div>
+
+      <footer class="site-footer">
+        IKC Workflows Design Reference &middot; IBM Cloud Pak for Data &middot; Last updated 2025
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>

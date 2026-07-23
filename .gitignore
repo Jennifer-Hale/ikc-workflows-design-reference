@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# PDFs — stored on Box, not in the repo
+research/*.pdf
