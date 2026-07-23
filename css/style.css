@@ -623,6 +623,12 @@ a:visited {
   color: var(--cds-text-secondary);
 }
 
+.link-tbd {
+  font-size: 0.75rem;
+  color: var(--cds-text-disabled);
+  letter-spacing: 0.32px;
+}
+
 /* === Team roster === */
 .roster-row {
   display: flex;
