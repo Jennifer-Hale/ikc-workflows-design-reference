@@ -626,7 +626,7 @@ a:visited {
 /* === Team roster === */
 .roster-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding: var(--cds-spacing-04) 0;
   border-bottom: 1px solid var(--cds-border-subtle-00);
@@ -654,6 +654,65 @@ a:visited {
   font-size: 0.75rem;
   letter-spacing: 0.32px;
   color: var(--cds-text-helper);
+}
+
+.roster-row__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--cds-spacing-04);
+  flex-shrink: 0;
+}
+
+/* Copy email button */
+.copy-email {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 2px;
+  color: var(--cds-text-helper);
+  padding: 0;
+  transition: background 0.1s, color 0.1s;
+}
+
+.copy-email:hover {
+  background: var(--cds-layer-01);
+  color: var(--cds-text-primary);
+}
+
+.copy-email svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+/* Tooltip "Copied!" */
+.copy-email::after {
+  content: 'Copied!';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cds-gray-100);
+  color: var(--cds-text-inverse);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16px;
+  white-space: nowrap;
+  padding: 2px 6px;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+
+.copy-email.copied::after {
+  opacity: 1;
 }
 
 /* === Meeting card === */
