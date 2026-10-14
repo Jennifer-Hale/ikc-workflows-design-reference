@@ -602,7 +602,8 @@ a:visited {
 /* === Content list items (links, resources) === */
 .content-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--cds-spacing-05);
   padding: var(--cds-spacing-04) 0;
   border-bottom: 1px solid var(--cds-border-subtle-00);
@@ -621,12 +622,20 @@ a:visited {
 
 .content-row__value {
   color: var(--cds-text-secondary);
+  text-align: right;
+}
+
+.content-row a {
+  text-align: right;
+  white-space: nowrap;
 }
 
 .link-tbd {
   font-size: 0.75rem;
   color: var(--cds-text-disabled);
   letter-spacing: 0.32px;
+  text-align: right;
+  white-space: nowrap;
 }
 
 /* === Team roster === */
