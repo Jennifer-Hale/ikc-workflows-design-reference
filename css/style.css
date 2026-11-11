@@ -453,12 +453,12 @@ a:visited {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1px;
-  background: var(--cds-border-subtle-00);
   margin-top: var(--cds-spacing-05);
 }
 
 .tile {
   background: var(--cds-background);
+  box-shadow: 0 0 0 1px var(--cds-border-subtle-00);
   padding: var(--cds-spacing-05);
   min-height: 160px;
   display: flex;
